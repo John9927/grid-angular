@@ -14,7 +14,6 @@
   justify-content: stretch;
 }
 
-
 // Card
 
 .item1__span__name {
@@ -24,7 +23,7 @@
 }
 
 .item1__span__graduate {
-  color:hsl(263, 51%, 75%);
+  color: hsl(263, 51%, 75%);
   font-size: 11px;
   margin-top: -3px;
 }
@@ -33,7 +32,7 @@
 .item2__span__title {
   display: grid;
   margin-top: 10px;
-  font-size: 16px
+  font-size: 16px;
 }
 
 .item1__span__description,
@@ -48,7 +47,7 @@
 }
 
 .item2__span__description {
- color: hsl(216, 18%, 56%);
+  color: hsl(216, 18%, 56%);
 }
 
 .item2__span__name {
@@ -57,7 +56,7 @@
 }
 
 .item2__span__graduate {
-  color:hsl(216, 18%, 56%);
+  color: hsl(216, 18%, 56%);
   font-size: 11px;
   margin-top: -3px;
 }
@@ -69,7 +68,7 @@
 }
 
 .item3__span__graduate {
-  color:hsl(216, 18%, 56%);
+  color: hsl(216, 18%, 56%);
   font-size: 11px;
   margin-top: -3px;
 }
@@ -91,7 +90,7 @@
 }
 
 .item4__span__graduate {
-  color:hsl(216, 18%, 56%);
+  color: hsl(216, 18%, 56%);
   font-size: 11px;
   margin-top: -3px;
 }
@@ -123,7 +122,7 @@
 }
 
 .item5__span__title {
-  color: white
+  color: white;
 }
 
 .item5__span__title {
@@ -137,15 +136,12 @@
   color: white;
 }
 
-
-
-
 .card__container__item1 {
   padding: 20px;
   color: white;
 }
 .item1 {
-  background:hsl(263, 55%, 52%);
+  background: hsl(263, 55%, 52%);
   grid-column: span 2;
   box-shadow: #a8a8a8 0px 0px 19px 6px;
   border-radius: 8px;
@@ -168,13 +164,12 @@
   border: 2px solid hsl(263, 58%, 66%);
 }
 
-
 .card__container__item2 {
   padding: 20px;
   color: white;
 }
 .item2 {
-  background:hsl(217, 19%, 35%);
+  background: hsl(217, 19%, 35%);
   box-shadow: #a8a8a8 0px 0px 19px 6px;
   border-radius: 8px;
 }
@@ -186,13 +181,12 @@
   border: 2px solid hsl(216, 18%, 56%);
 }
 
-
 .card__container__item3 {
   padding: 20px;
   color: white;
 }
 .item3 {
-  background:hsl(0, 0%, 100%);
+  background: hsl(0, 0%, 100%);
   border: 2px solid whitesmoke;
   box-shadow: #a8a8a8 0px 0px 19px 6px;
   grid-row: span 2;
@@ -206,14 +200,12 @@
   border: 2px solid hsl(216, 18%, 56%);
 }
 
-
-
 .card__container__item4 {
   padding: 20px;
   color: rgb(156, 156, 156);
 }
 .item4 {
-  background:hsl(0, 0%, 100%);
+  background: hsl(0, 0%, 100%);
   border: 2px solid whitesmoke;
   box-shadow: #a8a8a8 0px 0px 19px 6px;
   border-radius: 8px;
@@ -226,8 +218,6 @@
   border: 2px solid hsl(216, 18%, 56%);
 }
 
-
-
 .card__container__item5 {
   padding: 20px;
   background-color: hsl(219, 29%, 14%);
@@ -235,7 +225,7 @@
   border-radius: 8px;
 }
 .item5 {
-  background:hsl(219, 29%, 14%);
+  background: hsl(219, 29%, 14%);
   box-shadow: #a8a8a8 0px 0px 19px 6px;
   border-radius: 8px;
   grid-column: span 2;
@@ -261,23 +251,28 @@
   }
 
   .item1__container,
-.item2__container,
-.item3__container,
-.item4__container,
-.item5__container {
-  display: grid;
-  border-radius: 50%;
-  grid-auto-flow: column;
-  width: 57%;
-  justify-self: start;
-}
+  .item2__container,
+  .item3__container,
+  .item4__container,
+  .item5__container {
+    display: grid;
+    border-radius: 50%;
+    grid-auto-flow: column;
+    width: 57%;
+    justify-self: start;
+  }
 
-  .card__container__item5, .card__container__item  {
+  .card__container__item5,
+  .card__container__item {
     grid-row: span 1;
     grid-column: span 1;
   }
 
-  .item1, .item2, .item3, .item4, .item5 {
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5 {
     grid-column: span 1;
   }
 
@@ -301,8 +296,4 @@
   .item5 {
     order: 4;
   }
-
-
-
-
 }

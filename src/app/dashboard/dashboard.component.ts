@@ -1,3 +1,4 @@
+import { AuthService } from './../auth.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+  person: any;
+  constructor(public auth: AuthService) {
+   }
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit() {
+   this.auth.getTitle().subscribe(res => {
+      res.docs.map(doc => {
+        this.person = doc.data();
+      })
+    });
   }
-
 }
+
