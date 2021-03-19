@@ -1,5 +1,5 @@
 .master {
-  display: flex;
+  display: grid;
   justify-content: center;
   height: 100vh;
   align-items: center;
@@ -17,6 +17,129 @@
 
 // Card
 
+.item1__span__name {
+  margin-top: 2px;
+  margin-left: -160px;
+  font-size: 13px;
+}
+
+.item1__span__graduate {
+  color:hsl(263, 51%, 75%);
+  font-size: 11px;
+  margin-top: -3px;
+}
+
+.item1__span__title,
+.item2__span__title {
+  display: grid;
+  margin-top: 10px;
+  font-size: 16px
+}
+
+.item1__span__description,
+.item2__span__description,
+.item3__span__description,
+.item4__span__description,
+.item5__span__description {
+  display: grid;
+  margin-top: 10px;
+  font-size: 12px;
+  color: hsl(263, 51%, 75%);
+}
+
+.item2__span__description {
+ color: hsl(216, 18%, 56%);
+}
+
+.item2__span__name {
+  margin-top: 2px;
+  font-size: 13px;
+}
+
+.item2__span__graduate {
+  color:hsl(216, 18%, 56%);
+  font-size: 11px;
+  margin-top: -3px;
+}
+
+.item3__span__name {
+  color: hsl(216, 18%, 56%);
+  margin-top: 2px;
+  font-size: 13px;
+}
+
+.item3__span__graduate {
+  color:hsl(216, 18%, 56%);
+  font-size: 11px;
+  margin-top: -3px;
+}
+
+.item3__span__title {
+  display: grid;
+  margin-top: 10px;
+  font-size: 16px;
+  color: hsl(216, 18%, 56%);
+}
+
+.item3__span__description {
+  color: hsl(216, 18%, 56%);
+}
+
+.item4__span__name {
+  margin-top: 2px;
+  font-size: 13px;
+}
+
+.item4__span__graduate {
+  color:hsl(216, 18%, 56%);
+  font-size: 11px;
+  margin-top: -3px;
+}
+
+.item4__span__title {
+  color: hsl(216, 18%, 56%);
+}
+
+.item4__span__title {
+  display: grid;
+  margin-top: 10px;
+  font-size: 16px;
+  color: hsl(216, 18%, 56%);
+}
+.item4__span__description {
+  color: hsl(216, 18%, 56%);
+}
+
+.item5__span__name {
+  margin-top: 2px;
+  margin-left: -160px;
+  font-size: 13px;
+}
+
+.item5__span__graduate {
+  color: white;
+  font-size: 11px;
+  margin-top: -3px;
+}
+
+.item5__span__title {
+  color: white
+}
+
+.item5__span__title {
+  display: grid;
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+.item5__span__description {
+  color: white;
+}
+
+
+
+
 .card__container__item1 {
   padding: 20px;
   color: white;
@@ -27,9 +150,16 @@
   box-shadow: #a8a8a8 0px 0px 19px 6px;
   border-radius: 8px;
 }
-.item1__container {
-  display: flex;
+.item1__container,
+.item2__container,
+.item3__container,
+.item4__container,
+.item5__container {
+  display: grid;
   border-radius: 50%;
+  grid-auto-flow: column;
+  width: 100%;
+  justify-self: start;
 }
 .item1__image {
   border-radius: 50%;
@@ -48,10 +178,7 @@
   box-shadow: #a8a8a8 0px 0px 19px 6px;
   border-radius: 8px;
 }
-.item2__container {
-  display: flex;
-  border-radius: 50%;
-}
+
 .item2__image {
   border-radius: 50%;
   width: 30px;
@@ -71,11 +198,7 @@
   grid-row: span 2;
   border-radius: 8px;
 }
-.item3__container {
-  display: flex;
-  border-radius: 50%;
-  margin-top: -3px;
-}
+
 .item3__image {
   border-radius: 50%;
   width: 30px;
@@ -95,10 +218,7 @@
   box-shadow: #a8a8a8 0px 0px 19px 6px;
   border-radius: 8px;
 }
-.item4__container {
-  display: flex;
-  border-radius: 50%;
-}
+
 .item4__image {
   border-radius: 50%;
   width: 30px;
@@ -120,10 +240,7 @@
   border-radius: 8px;
   grid-column: span 2;
 }
-.item5__container {
-  display: flex;
-  border-radius: 50%;
-}
+
 .item5__image {
   border-radius: 50%;
   width: 30px;
@@ -133,7 +250,7 @@
 
 @media only screen and (max-width: 800px) {
   .master {
-    display: flex;
+    // display: flex;
     align-items: initial;
   }
   .container {
@@ -142,6 +259,18 @@
     grid-template-columns: 90%;
     justify-content: center;
   }
+
+  .item1__container,
+.item2__container,
+.item3__container,
+.item4__container,
+.item5__container {
+  display: grid;
+  border-radius: 50%;
+  grid-auto-flow: column;
+  width: 57%;
+  justify-self: start;
+}
 
   .card__container__item5, .card__container__item  {
     grid-row: span 1;
