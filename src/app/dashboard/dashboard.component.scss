@@ -2,12 +2,14 @@
   display: grid;
   justify-content: center;
   height: 100vh;
+  zoom: 92%;
   align-items: center;
 }
 
 .container {
   display: grid;
   grid-gap: 20px;
+  margin-top: 50px;
   grid-template-columns: 195px 195px 195px 226px;
   grid-template-rows: auto;
   place-items: stretch stretch;

@@ -8,11 +8,13 @@
   display: grid;
   justify-content: center;
   height: 100vh;
+  zoom: 92%;
   align-items: center;
 }
 
 .container {
   display: grid;
+  margin-top: 50px;
   grid-gap: 20px;
   grid-template-columns: 200px 200px 200px 200px;
   grid-template-rows: auto;
