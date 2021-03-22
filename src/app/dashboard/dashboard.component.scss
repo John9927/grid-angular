@@ -235,12 +235,14 @@
 @media only screen and (max-width: 800px) {
   .master {
     align-items: initial;
+
   }
   .container {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 90%;
     justify-content: center;
+    margin-top: 0px;
   }
 
   .item1__container,
