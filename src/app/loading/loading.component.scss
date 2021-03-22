@@ -1,0 +1,100 @@
+// Skeleton
+.ant-skeleton {
+  height: 100%;
+  padding: 9px;
+}
+
+.master {
+  display: grid;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: auto;
+  place-items: stretch stretch;
+  justify-content: stretch;
+}
+
+// Card
+
+.item1 {
+  background: hsl(263, 55%, 52%);
+  grid-column: span 2;
+  box-shadow: #dddddd 0px 0px 19px 6px;
+  border-radius: 8px;
+}
+
+.item2 {
+  background: hsl(217, 19%, 35%);
+  box-shadow: #dddddd 0px 0px 19px 6px;
+  border-radius: 8px;
+}
+
+.item3 {
+  background: hsl(0, 0%, 100%);
+  border: 2px solid whitesmoke;
+  box-shadow: #dddddd 0px 0px 19px 6px;
+  grid-row: span 2;
+  border-radius: 8px;
+}
+
+.item4 {
+  background: hsl(0, 0%, 100%);
+  border: 2px solid whitesmoke;
+  box-shadow: #dddddd 0px 0px 19px 6px;
+  border-radius: 8px;
+}
+
+.item5 {
+  background: hsl(219, 29%, 14%);
+  box-shadow: #dddddd 0px 0px 19px 6px;
+  border-radius: 8px;
+  grid-column: span 2;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .master {
+    align-items: initial;
+  }
+  .container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 90%;
+    justify-content: center;
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5 {
+    grid-column: span 1;
+  }
+
+  .item1 {
+    margin-top: 20px;
+    order: 1;
+  }
+
+  .item2 {
+    order: 2;
+  }
+
+  .item3 {
+    order: 5;
+  }
+
+  .item4 {
+    order: 3;
+  }
+
+  .item5 {
+    order: 4;
+  }
+}

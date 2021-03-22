@@ -9,14 +9,21 @@ import { Component, OnInit } from '@angular/core';
 export class DashboardComponent implements OnInit {
   person: any;
   constructor(public auth: AuthService) {
-   }
+  }
 
   ngOnInit() {
-   this.auth.getTitle().subscribe(res => {
+    setTimeout(() => {
+      this.getData();
+    }, 3000);
+  }
+
+  getData() {
+    this.auth.getTitle().subscribe(res => {
       res.docs.map(doc => {
         this.person = doc.data();
       })
     });
   }
+
 }
 

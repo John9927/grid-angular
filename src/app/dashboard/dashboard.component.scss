@@ -8,7 +8,7 @@
 .container {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-columns: 195px 195px 195px 226px;
   grid-template-rows: auto;
   place-items: stretch stretch;
   justify-content: stretch;
@@ -17,7 +17,7 @@
 // Card
 
 .item1__span__name {
-  margin-top: 2px;
+  margin-top: -3px;
   margin-left: -160px;
   font-size: 13px;
 }
@@ -32,7 +32,7 @@
 .item2__span__title {
   display: grid;
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .item1__span__description,
@@ -51,7 +51,7 @@
 }
 
 .item2__span__name {
-  margin-top: 2px;
+  margin-top: -4px;
   font-size: 13px;
 }
 
@@ -63,7 +63,7 @@
 
 .item3__span__name {
   color: hsl(216, 18%, 56%);
-  margin-top: 2px;
+  margin-top: -5px;
   font-size: 13px;
 }
 
@@ -76,7 +76,7 @@
 .item3__span__title {
   display: grid;
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 15px;
   color: hsl(216, 18%, 56%);
 }
 
@@ -96,13 +96,9 @@
 }
 
 .item4__span__title {
-  color: hsl(216, 18%, 56%);
-}
-
-.item4__span__title {
   display: grid;
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 15px;
   color: hsl(216, 18%, 56%);
 }
 .item4__span__description {
@@ -122,13 +118,9 @@
 }
 
 .item5__span__title {
-  color: white;
-}
-
-.item5__span__title {
   display: grid;
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 15px;
   color: white;
 }
 
@@ -143,7 +135,7 @@
 .item1 {
   background: hsl(263, 55%, 52%);
   grid-column: span 2;
-  box-shadow: #a8a8a8 0px 0px 19px 6px;
+  box-shadow: #dddddd 0px 0px 19px 6px;
   border-radius: 8px;
 }
 .item1__container,
@@ -170,7 +162,7 @@
 }
 .item2 {
   background: hsl(217, 19%, 35%);
-  box-shadow: #a8a8a8 0px 0px 19px 6px;
+  box-shadow: #dddddd 0px 0px 19px 6px;
   border-radius: 8px;
 }
 
@@ -188,7 +180,7 @@
 .item3 {
   background: hsl(0, 0%, 100%);
   border: 2px solid whitesmoke;
-  box-shadow: #a8a8a8 0px 0px 19px 6px;
+  box-shadow: #dddddd 0px 0px 19px 6px;
   grid-row: span 2;
   border-radius: 8px;
 }
@@ -207,7 +199,7 @@
 .item4 {
   background: hsl(0, 0%, 100%);
   border: 2px solid whitesmoke;
-  box-shadow: #a8a8a8 0px 0px 19px 6px;
+  box-shadow: #dddddd 0px 0px 19px 6px;
   border-radius: 8px;
 }
 
@@ -226,7 +218,7 @@
 }
 .item5 {
   background: hsl(219, 29%, 14%);
-  box-shadow: #a8a8a8 0px 0px 19px 6px;
+  box-shadow: #dddddd 0px 0px 19px 6px;
   border-radius: 8px;
   grid-column: span 2;
 }
@@ -240,7 +232,6 @@
 
 @media only screen and (max-width: 800px) {
   .master {
-    // display: flex;
     align-items: initial;
   }
   .container {
@@ -274,6 +265,11 @@
   .item4,
   .item5 {
     grid-column: span 1;
+  }
+
+  .item1__span__name,
+  .item5__span__name {
+    margin-left: 0px;
   }
 
   .item1 {
